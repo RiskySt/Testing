@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,
+li,
+a{
+    list-style: none;
+    text-decoration: none;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    
+    text-decoration: none;
+}
+.active-Link{
+    background-color: #BBAACC;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+.active-Link:hover{
+    background-color: rgb(223, 171, 223);
+}
+.content-profile{
+    display: flex;
+    margin: 50px 50px;
+}
+.content-profile h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+.btn-edit{
+    background-color: rgb(224, 149, 224);
+    padding: 5px 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 2px solid purple;
+    color: white;
+}
+.title{
+    font-size: 30px;
+}
+.title-profile
+{
+    border-bottom: 2px solid black;
+}
+.info-Help{
+    background-color: rgb(223, 171, 223);
+    margin-top: 50px;
+    border-radius: 20px;
+}
+.sosmed-Links{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,23 @@
+
+/* ----------------
+CODE COLOR CSS
+------------------- */
+:root {
+  /* DEFAULT */
+  --black: #000;
+  --white: #fff;
+  --purple: #C100FF;
+  /* COLOR */
+  --dark-purple: #60416A;
+  --white-purple: #BBAACC;
+  --gray: #E3E1E1;
+  --dark-black: #0B0D17;
+  --white-blue: #6F8EFB;
+  --light-blue: #2EC5CE;
+  --pink: #FF00C7;
+
+  /* COLOR BUBLE */
+  --purple-bubble: #8C30F5;
+  --purple-secondary: #5B3068;
+  --yellow: #FFC444;
+}

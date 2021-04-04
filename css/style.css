@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import "./animation.css";
+@import "./header.css";
+@import "./footer.css";
+@import "./responsive.css";
+@import "./color.css";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li,
+a{
+  list-style: none;
+  text-decoration: none !important;
+  letter-spacing: 1px !important;
+  color: var(--black);
+}
+a:hover,
+.active{
+    color: var(--purple) !important;
+}
+body{
+  font-family: 'Manrope',sans-serif;
+}
+i{
+  font-size: 20px;
+}
+.nav-active {
+  transform: translateX(0%);
+}

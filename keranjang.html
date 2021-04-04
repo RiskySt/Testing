@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/icon.jpg" type="image/x-icon">
+    <title>APBPA</title>
+
+    <!-- STYLESHEET CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="./css/Bootstrap/bootstrap.min.css">
+
+    <!-- JQUERY BOOTSTRAP AND CSS -->
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery/jquery.min.js"></script>
+    <script src="./js/jquery/jquery.js"></script>
+    <script src="./js/jquery/bootstrap.bundle.min.js"></script>
+
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+            transition: 0.25s all;
+            scroll-behavior: smooth;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+        tbody tr td img{
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- START NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="justify-content: flex-end;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon span"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: flex-end;">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="" class="nav-link" style="color: black;">About</a></li>
+                <li class="nav-item"><a href="#Products" class="nav-link" style="color: black;">Products</a></li>
+                <li class="nav-item"><a href="" class="nav-link" style="color: black;">Contacts</a></li>
+                <li class="nav-item"><a href="" class="nav-link" style="color: black;">Cart</a></li>
+                <li class="nav-item"><a href="" class="nav-link active">Profile</a></li>
+                <li class="nav-item"><a href="" class="nav-link"><img class="image-profile" src="./assets/images/eo.jpg"
+                            height="50px" width="50px" alt="Foto"></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+
+    <div class="content-Nav">
+        <div class="wrapper-Sewa">
+            <div class="logo">
+                <h1>Sewa Barang | </h1>
+                <p>Keranjang Sewa</p>
+            </div>
+            <div class="btn-Search">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Cari Produk">
+            </div>
+        </div>
+    </div>
+
+
+    <br><br><br>
+    <!-- START PRODUCTS -->
+    <!-- Shopping Cart -->
+    <div class="shopping-cart section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Shopping Summery -->
+                    <table class="table shopping-summery">
+                        <thead>
+                            <tr class="main-hading">
+                                <th>PRODUCT</th>
+                                <th>NAME</th>
+                                <th class="text-center">UNIT PRICE</th>
+                                <th class="text-center">QUANTITY</th>
+                                <th class="text-center">TOTAL</th>
+                                <th class="text-center">Aksi</i></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="image" data-title="No"><img src="./assets/images/image-1.jpg" alt="#">
+                                </td>
+                                <td class="product-des" data-title="Description">
+                                    <p class="product-name"><a href="#">Kursi</a></p>
+                                    <p class="product-des">Maboriosam in a tonto nesciung eget distingy magndapibus.</p>
+                                </td>
+                                <td class="price" data-title="Price"><span>$110.00 </span></td>
+                                <td class="qty" data-title="Qty">
+                                    <!-- Input Order -->
+                                    <div class="input-group">
+                                        <div class="button minus">
+                                            <button type="button" class="btn btn-primary btn-number" disabled="disabled"
+                                                data-type="minus" data-field="quant[1]">
+                                                <i class="ti-minus"></i>
+                                            </button>
+                                        </div>
+                                        <input type="text" name="quant[1]" class="input-number" data-min="1" data-max="100"
+                                            value="1">
+                                        <div class="button plus">
+                                            <button type="button" class="btn btn-primary btn-number" data-type="plus"
+                                                data-field="quant[1]">
+                                                <i class="ti-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!--/ End Input Order -->
+                                </td>
+                                <td class="total-amount" data-title="Total"><span>$220.88</span></td>
+                                <td class="action" data-title="Remove"><a href="#">Remove</i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="image" data-title="No"><img src="./assets/images/image-2.jpg" alt="#">
+                                </td>
+                                <td class="product-des" data-title="Description">
+                                    <p class="product-name"><a href="#">Kamera</a></p>
+                                    <p class="product-des">Maboriosam in a tonto nesciung eget distingy magndapibus.</p>
+                                </td>
+                                <td class="price" data-title="Price"><span>$110.00 </span></td>
+                                <td class="qty" data-title="Qty">
+                                    <!-- Input Order -->
+                                    <div class="input-group">
+                                        <div class="button minus">
+                                            <button type="button" class="btn btn-primary btn-number" disabled="disabled"
+                                                data-type="minus" data-field="quant[2]">
+                                                <i class="ti-minus"></i>
+                                            </button>
+                                        </div>
+                                        <input type="text" name="quant[2]" class="input-number" data-min="1" data-max="100"
+                                            value="2">
+                                        <div class="button plus">
+                                            <button type="button" class="btn btn-primary btn-number" data-type="plus"
+                                                data-field="quant[2]">
+                                                <i class="ti-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!--/ End Input Order -->
+                                </td>
+                                <td class="total-amount" data-title="Total"><span>$220.88</span></td>
+                                <td class="action" data-title="Remove"><a href="#">Remove</i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="image" data-title="No"><img src="./assets/images/image-3.jpg" alt="#">
+                                </td>
+                                <td class="product-des" data-title="Description">
+                                    <p class="product-name"><a href="#">Sewa Badut Ulang Tahun</a></p>
+                                    <p class="product-des">Maboriosam in a tonto nesciung eget distingy magndapibus.</p>
+                                </td>
+                                <td class="price" data-title="Price"><span>$110.00 </span></td>
+                                <td class="qty" data-title="Qty">
+                                    <!-- Input Order -->
+                                    <div class="input-group">
+                                        <div class="button minus">
+                                            <button type="button" class="btn btn-primary btn-number" disabled="disabled"
+                                                data-type="minus" data-field="quant[3]">
+                                                <i class="ti-minus"></i>
+                                            </button>
+                                        </div>
+                                        <input type="text" name="quant[3]" class="input-number" data-min="1" data-max="100"
+                                            value="3">
+                                        <div class="button plus">
+                                            <button type="button" class="btn btn-primary btn-number" data-type="plus"
+                                                data-field="quant[3]">
+                                                <i class="ti-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!--/ End Input Order -->
+                                </td>
+                                <td class="total-amount" data-title="Total"><span>$220.88</span></td>
+                                <td class="action" data-title="Remove"><a href="#">Remove</i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--/ End Shopping Summery -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <!-- Total Amount -->
+                    <div class="total-amount">
+                        <div class="row">
+                            <div class="col-lg-8 col-md-5 col-12">
+                               
+                            </div>
+                            <div class="col-lg-4 col-md-7 col-12">
+                                <div class="right">
+                                    <ul>
+                                        <li>Cart Subtotal<span>$330.00</span></li>
+                                        <li>Shipping<span>Free</span></li>
+                                        <li>You Save<span>$20.00</span></li>
+                                        <li class="last">You Pay<span>$310.00</span></li>
+                                    </ul>
+                                    <div class="button5">
+                                        <a href="#" class="btn"  data-toggle="modal" data-target="#exampleModal">Checkout</a>
+                                    </div>
+
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Edit Profile</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                    
+                                                    <!-- FORM -->
+                                                    <form>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="Username">Username</label>
+                                                                <input type="text" class="form-control" id="inputEmail4" placeholder="Username">
+                                                            </div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="Name">Name</label>
+                                                                <input type="text" class="form-control" id="inputPassword4" placeholder="Name">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputNumber">Number Phone</label>
+                                                            <input type="text" class="form-control" id="inputNumber" placeholder="***********">
+                                                        </div>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputAlamat">Alamat</label>
+                                                                <input type="text" class="form-control" id="inputAlamat">
+                                                            </div>
+                                                            <div class="form-group col-md-4">
+                                                                <label for="Jenis Kelamin">Jenis Kelamin</label>
+                                                                <select id="Jenis Kelamin" class="form-control">
+                                                                    <option selected>Laki - laki</option>
+                                                                    <option>Perempuan</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="form-group col-md-2">
+                                                                <label for="inputEmail">Email</label>
+                                                                <input type="email" class="form-control" id="inputEmail">
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                    
+                                    
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ End Total Amount -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ End Shopping Cart -->
+
+    <!-- START FOOTER -->
+    <footer>
+        <div class="footer-Container">
+            <!-- PRODUCT -->
+            <div class="product-Footer">
+                <h4>Product</h4>
+                <a href="">Overview</a>
+                <a href="">Features <span>new</span> </a>
+                <a href="">Checkout</a>
+                <a href="">Pricing</a>
+                <a href="">Releases</a>
+            </div>
+    
+            <!-- COMPANY -->
+            <div class="company-Footer">
+                <h4>Company</h4>
+                <a href="">About</a>
+                <a href="">Press</a>
+                <a href="">Careers</a>
+                <a href="">Contact</a>
+                <a href="">Partners</a>
+            </div>
+    
+            <!-- SUPPORT -->
+            <div class="support-Footer">
+                <h4>Support</h4>
+                <a href="">Help & Center</a>
+                <a href="">Terms of sevice</a>
+                <a href="">Legal</a>
+                <a href="">Privacy policy</a>
+                <a href="">Status</a>
+            </div>
+        </div>
+    
+        <!-- FOOTER MEDIA -->
+        <div class="footer-Sosmed">
+            <a href="">Sewa Barang</a>
+            <div class="sosmed-Links">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+
+
+
+
+
+
+
+</body>
+</html>
